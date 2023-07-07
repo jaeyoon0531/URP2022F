@@ -19,6 +19,8 @@ module SAL_BK_CTRL
     input   wire                ref_req_i,
     output  logic               ref_gnt_o
 );
+//==========counter matchine==========================
+    
 
     localparam                  S_CLOSED    = 1'b0,
                                 S_OPEN      = 1'b1;
@@ -244,5 +246,6 @@ module SAL_BK_CTRL
         .is_zero_o                  (is_t_wtr_met)
     );
 
+    
 
 endmodule // SAL_BK_CTRL
